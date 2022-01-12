@@ -121,6 +121,18 @@ void get_telescope_name(int telescope_id, struct spectra_info *s)
         s->beam_FWHM = default_beam;
         break;
     case 12:
+        strcpy(s->telescope, "Canberra");
+        s->beam_FWHM = 2.0 / 3600.0 * beam_halfwidth(s->fctr, 70.0);
+        break;
+    case 13:
+        strcpy(s->telescope, "Goldstone");
+        s->beam_FWHM = 2.0 / 3600.0 * beam_halfwidth(s->fctr, 70.0);
+        break;
+    case 14:
+        strcpy(s->telescope, "Robledo");
+        s->beam_FWHM = 2.0 / 3600.0 * beam_halfwidth(s->fctr, 70.0);
+        break;
+    case 15:
         strcpy(s->telescope, "VLA");
         s->beam_FWHM = default_beam;
         break;
