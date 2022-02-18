@@ -152,15 +152,6 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm, int de
     } else if (strcmp(idata->telescope, "KAT-7") == 0) {
         scopechar = 'k';
         tracklen = 12;
-    } else if (strcmp(idata->telescope, "CANBERRA") == 0) {
-        scopechar = 'n';
-        tracklen = 12;
-    } else if (strcmp(idata->telescope, "GOLDSTONE") == 0) {
-        scopechar = 'q';
-        tracklen = 12;
-    } else if (strcmp(idata->telescope, "ROBLEDO") == 0) {
-        scopechar = 'j';
-        tracklen = 12;
     } else if (strcmp(idata->telescope, "Geocenter") == 0) {
         scopechar = 'o';
         tracklen = 12;
